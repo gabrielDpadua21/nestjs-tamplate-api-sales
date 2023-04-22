@@ -5,7 +5,7 @@
 ```
 curl -X POST \
   -H "Content-Type: application/json" \
-  -d '{"user": "johndoe", "email": "johndoe@example.com", "phone": "555-1234", "cpf": "01234567890", "password": "secret"}' \
+  -d '{"nick_name": "johndoe", "email": "johndoe@example.com", "phone": "555-1234", "cpf": "01234567890", "password": "secret"}' \
   http://localhost:8080/user \
   | python -m json.tool
 ```

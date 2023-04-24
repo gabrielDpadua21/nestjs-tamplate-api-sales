@@ -21,6 +21,9 @@ export class UserModel {
     @Column({ name: "password", nullable: false })
     cpf: string;
 
+    @Column({ name: "type", nullable: false })
+    type: number;
+
     @CreateDateColumn({ name: "created_at" })
     created_at: Date;
 

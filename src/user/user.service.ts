@@ -19,6 +19,7 @@ export class UserService {
         const passwordHash = await hash(newUser.password, soutOrRounds);
         return this.userRepository.save({
             ...newUser,
+            type: 1,
             password: passwordHash
         })
     }
